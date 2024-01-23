@@ -1,7 +1,11 @@
 :Author: Leonardo Alves
+
 :Email: {AuthorEmail}
+
 :Date: 2023-06-19
+
 :Revision: version 1.4
+
 :License: MIT
 
 = Project: {Biblioteca para sensores de refletância utilizando os registradores do Arduino Uno}
@@ -16,4 +20,4 @@ mais sofisticado de maneira simples, substituindo o uso de "pinMode" e "digitalR
 Atribuição necessária.
 
 === Contributing
-To contribute to this project please contact naome https://id.arduino.cc/naome
+To contribute to this project please contact naome https://id.arduino.cc/naome 
