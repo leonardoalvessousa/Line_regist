@@ -97,7 +97,7 @@ Consulte **[Arduino_tutorials](https://www.arduino.cc/reference/pt/language/func
 
 ## 📄 Licença
 
-   >MIT license
+   >GNU GENERAL PUBLIC LICENSE Version 3
 
 ## 🎁 Expressões de gratidão
 
