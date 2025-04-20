@@ -1,5 +1,5 @@
 ![Texto Alternativo](https://raw.githubusercontent.com/leonardoalvessousa/Line_regist/refs/heads/main/linebanner.jpg)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15251739.svg)](https://doi.org/10.5281/zenodo.15251739)
 >Este projeto pretende utilizar os registradores do microcontrolador atmega328p para configurar as portas de A0 a A6 como portas digitais. As vantagens são utilizar um método mais sofisticado de maneira simples, substituindo o uso de "pinMode" e "digitalRead".
 
 
