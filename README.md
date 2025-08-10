@@ -1,113 +1,108 @@
-![Texto Alternativo](https://raw.githubusercontent.com/leonardoalvessousa/Line_regist/refs/heads/main/linebanner.jpg)
+![Alternative Text](https://raw.githubusercontent.com/leonardoalvessousa/Line_regist/refs/heads/main/linebanner.jpg)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15251739.svg)](https://doi.org/10.5281/zenodo.15251739)
->Este projeto pretende utilizar os registradores do microcontrolador atmega328p para configurar as portas de A0 a A6 como portas digitais. As vantagens são utilizar um método mais sofisticado de maneira simples, substituindo o uso de "pinMode" e "digitalRead".
 
+> This project aims to use the registers of the ATmega328P microcontroller to configure ports A0 to A6 as digital ports.
+> The advantages are using a more sophisticated method in a simple way, replacing the use of `pinMode` and `digitalRead`.
 
-## 🤓 Se liga que é hora da explicação
+## 🤓 Time for the explanation
 
-#### Pré-requisitos
- - Ter a IDE Arduino instalada na sua máquina. 
- - Saber como instalar uma biblioteca na IDE Arduino.
-##### ⚠️ Bora resolver? 
-###### 🔧 Instalando a IDE
+#### Prerequisites
 
-Consulte **[Arduino_tutorials](https://docs.arduino.cc/software/ide-v1/tutorials/Linux/)** para saber como instalar no LINUX 🐧
-E **[Arduino_tutorials2](https://docs.arduino.cc/software/ide-v1/tutorials/Windows/)** para saber como instalar no WINDOWS 🪟
+* Have the Arduino IDE installed on your machine.
+* Know how to install a library in the Arduino IDE.
 
-###### 🔧 Instalando uma biblioteca na IDE
+##### ⚠️ Let's get to it!
 
-Consulte **[Robocore_tutorials](https://www.robocore.net/tutoriais/adicionando-bibliotecas-na-ide-arduino?srsltid=AfmBOooDxOPaWqBRtoEr5R47h6WfQVaGeBnxnqxxAKhRJVOyjvMJ0e2t)** para saber como instalar uma biblioteca 📘
+###### 🔧 Installing the IDE
 
+Check **[Arduino\_tutorials](https://docs.arduino.cc/software/ide-v1/tutorials/Linux/)** to learn how to install it on LINUX 🐧
+And **[Arduino\_tutorials2](https://docs.arduino.cc/software/ide-v1/tutorials/Windows/)** to learn how to install it on WINDOWS 🪟
 
-## 💻 Partiu prática!
+###### 🔧 Installing a library in the IDE
 
->Com seu primeiro projeto aberto, inclua a biblioteca 🤓 
+Check **[Robocore\_tutorials](https://www.robocore.net/tutoriais/adicionando-bibliotecas-na-ide-arduino?srsltid=AfmBOooDxOPaWqBRtoEr5R47h6WfQVaGeBnxnqxxAKhRJVOyjvMJ0e2t)** to learn how to install a library 📘
 
-```
-#include <Line.h>
-```
+## 💻 Let's practice!
 
->Configure a porta A0 como digital usando a biblioteca!
+> With your first project open, include the library 🤓
 
 ```
 #include <Line.h>
-line sensor1(0); //habilita o caminho direto a porta A0 como entrada e digital
 ```
 
+> Configure port A0 as digital using the library!
 
- > [!NOTE]
-> Perceba que se quisermos utilizar a porta A2, basta colocar um "2" dentro dos parênteses. Isso vale para todas as outras portas analógicas 🐱‍🚀
+```
+#include <Line.h>
+line sensor1(0); //enables direct access to port A0 as input and digital
+```
 
+> \[!NOTE]
+> Notice that if we want to use port A2, just put a "2" inside the parentheses. This works for all other analog ports 🐱‍🚀
 
->Configurando o monitor serial 
+> Configuring the serial monitor
 
 ```
 #include <Arduino.h>
 #include <Line.h>
-line sensor1(0); //habilita o caminho direto a porta A0 como entrada e digital
+line sensor1(0); //enables direct access to port A0 as input and digital
 
-/*Tarefa inicial*/
+/*Initial task*/
 void setup() 
 {
- Serial.begin(9600); //inicializa o monitor serial
+ Serial.begin(9600); //initializes the serial monitor
 }
 ```
 
->Por fim, imprima os valores lidos na porta A0 no monitor serial 🖥️
+> Finally, print the values read on port A0 in the serial monitor 🖥️
 
 ```
 #include <Arduino.h>
 #include <Line.h>
-line sensor1(0); //habilita o caminho direto a porta A0 como entrada e digital
+line sensor1(0); //enables direct access to port A0 as input and digital
 
-/*Tarefa inicial*/
+/*Initial task*/
 void setup() 
 {
- Serial.begin(9600); //inicializa o monitor serial
+ Serial.begin(9600); //initializes the serial monitor
 }
 
-/*Tarefa principal*/
+/*Main task*/
 void loop() 
 {
- Serial.print("Leitura: ");
- Serial.println(sensor1.read()); //imprime o valor do sensor declarado
+ Serial.print("Reading: ");
+ Serial.println(sensor1.read()); //prints the value from the declared sensor
 }
 ```
 
+> \[!CAUTION]
+> If you don’t know what the serial monitor is or how to use it... 😮
 
-> [!CAUTION]
-> Se você não sabe o que é o monitor serial ou como usá-lo... 😮
+###### 🖇️ Check this out!
 
-###### 🖇️ Veja isso!
+Check **[Arduino\_tutorials](https://www.arduino.cc/reference/pt/language/functions/communication/serial/)** to learn more about the serial monitor.
 
-Consulte **[Arduino_tutorials](https://www.arduino.cc/reference/pt/language/functions/communication/serial/)** para saber mais sobre o monitor serial
+## 📌 Version
 
+> v1.0.0.1
 
-## 📌 Versão
+## 😼 Author
 
->v1.0.0.1
+🐈‍⬛ @leonardoalvessousa
 
-## 😼 Autor
+## 😼 Contributors
 
- 🐈‍⬛ @leonardoalvessousa
+🐈‍⬛ @Lucas-p00 🐈‍⬛ @joaopedromagalhaes
 
-## 😼 Colaboradores
-  
-  🐈‍⬛ @Lucas-p00 🐈‍⬛ @joaopedromagalhaes
+## 📄 License
 
-## 📄 Licença
+> GNU GENERAL PUBLIC LICENSE Version 3
 
-   >GNU GENERAL PUBLIC LICENSE Version 3
+## 🎁 How to show appreciation
 
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
+* Tell others about this project 📢;
+* Invite a team member for a beer 🍺;
+* A public thank-you 🫂;
 * etc.
 
-
 ---
-<div align="center">
-    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com/?font=Roboto+Slab&color=%237E3ACE&size=30&center=true&vCenter=true&width=500&lines=Obrigado+por+ter+lido+tudo+!" alt="Obrigado por ter lido tudo!"></a>
-</div>
